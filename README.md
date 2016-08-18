@@ -1,4 +1,4 @@
-**Vagrant FAQs**  
+# Vagrant FAQs
 
 - [How to cleanup orphaned vagrant boxes](#vagrant-cleanup)
 
