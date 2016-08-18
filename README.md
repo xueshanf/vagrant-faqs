@@ -10,7 +10,7 @@ that contains the box metadata.
 When I run `vagrant global-status`, it shows up in running state, but I won't be able to use `vagrant destroy`, `vagrant gloabl-status --prune`
 to get rid of it.
 
-The follow clean up process worked in this my case. First find it in VirtualBox manager, save its state, unregister it, then you should
+The follow clean up process worked in my case. First find it in VirtualBox manager, save its state, unregister it, then you should
 be able to prune it. These are the steps:
 
 * Find the box you want to cleanup:
@@ -30,7 +30,7 @@ $ VBoxManage list runningvms
 ```
 
 The listed VMs has a name as prefix. Find the *uuid* that you want to destroy. Say you want to destory "foo_default_1460673696387_19372", 
-it's uuid is "04ec71fd-3e27-4798-b012-a9c55b257c5b"
+its uuid is "04ec71fd-3e27-4798-b012-a9c55b257c5b"
 
 ```
 $ VBoxManage savevms 04ec71fd-3e27-4798-b012-a9c55b257c5b
